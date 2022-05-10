@@ -1,5 +1,5 @@
 var nounarray = [
-	"O problema a banilor",
+	"O problema moderna",
 	"Inflatia"
 ];
 
