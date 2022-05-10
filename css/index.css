@@ -1,0 +1,876 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: white;
+	background-size:  cover;
+
+}
+
+.wrapper {
+	overflow-x: hidden;
+}
+@media screen and (min-width:1300px){
+	.content-header {
+		font-family: 'Josefin Sans', sans-serif;
+		text-align: center;
+		background-image:
+				linear-gradient(
+					rgba(0, 0, 0, 1),
+					rgba(0, 0, 0, 0.5),
+					rgba(0, 0, 0, 1)
+				),
+				url(../imagini/imagine.jpg);
+		background-size: cover;
+		min-height: 90vh;
+		line-height: 90vh;
+		text-align: center;
+		}
+		
+		.intro{
+			font-size: 50px;
+			display: inline-block;
+			cursor: default;
+			user-select: none;
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-o-user-select: none;
+		}
+		
+		.button-next {
+			min-height: 10vh;
+			transition:1s;
+			line-height: 5vh;
+			text-align: center;
+		}
+		
+		#arrow{
+			position: relative;
+			transition:0.5s;
+			top: 3vh;
+			filter: invert(100%);
+			border: none;
+			outline: none;
+			cursor: pointer;
+			overflow: hidden;
+			outline: none;
+			font-size: 30px;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 25%;
+			border-bottom-right-radius: 25%;
+			min-width: 3vw;
+		
+		}
+		#text {
+			color: white;
+		}
+		#cursor {
+			display: inline-block;
+			width: 2px;
+			height: 50px;
+			background-color: white;
+			animation: blink .75s step-end infinite;
+			user-select: none;
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-o-user-select: none;
+		}
+		
+		.title{
+			font-size: 50px;
+			margin-top: 40px;	
+			font-family: 'Oleo Script', cursive;
+		}
+		
+		.content-center{
+			background-color: rgba(255, 255, 255, 0.75);
+			min-height: 100vh;
+			max-height: 140vh;
+		}
+		
+		.content-center p {
+			font-family: 'Tapestry', cursive;
+		}
+		
+		.informative-1{
+			position: relative;
+			left: 5vw;
+			bottom: 7vh;
+			max-width: 30%;
+			opacity: 0;
+			display: inline-block;
+			border-radius: 10px;
+			min-height: 55vh;
+			box-shadow: -6px 4px 10px 5px;
+			text-align: center;
+			margin-top: 100px;
+			margin: 30px 10px;
+			transition: 1s;
+		}
+		
+		.informative-2{
+			opacity: 0;
+			position: relative;
+			left: 20vh;
+			top: 2vh;
+			border-radius: 10px;
+			min-height: 45vh;
+			box-shadow: 10px 4px 10px 5px;
+			text-align: center;
+			margin: 30px 10px;
+			min-width: 40%;
+			max-width: 50%;
+			display: inline-block;
+			transition: 1s;
+		
+		}
+		
+		.informative-3{
+			position: relative;
+			left: 2vw;
+			bottom: 15vh;
+			border-radius: 10px;
+			min-height: 60vh;
+			box-shadow: -6px 4px 10px 5px;
+			text-align: center;
+			margin: 30px 10px;
+			max-width: 40%;
+			opacity: 0;
+			display: inline-block;
+			transition: 1s;
+		}
+		.informative-4{
+			position: relative;
+			left: 7vw;
+			bottom:  10vh;
+			border-radius: 10px;
+			min-height: 50vh;
+			box-shadow: 10px 4px 10px 5px;
+			text-align: center;
+			margin: 30px 10px;
+			min-width: 55vh;
+			max-width: 60vh;
+			opacity: 0;
+			display: inline-block;	
+			transition: 1s;
+		}
+		
+		.informative-1 p{
+			margin-top: 20px;
+			font-size: 30px;
+			font-weight: 20px;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+		
+		.informative-2 p{
+			text-align: left;
+			font-size: 30px;
+			padding-top: 10px;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.informative-3 li{
+			font-weight: 20px;
+			font-size: 30px;
+			text-align: left;
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-left: 3vw;
+			list-style: none;
+		}
+		.informative-4 li{
+			list-style: none;
+			text-align: left;
+			font-size: 30px;
+			padding-top: 40px;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.informative-1:hover{
+			box-shadow: -6px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(10px, 0)
+		}
+		
+		.informative-2:hover{
+			box-shadow: 10px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(-10px, 0)
+		}
+		
+		.informative-3:hover{
+			box-shadow: -6px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(10px, -10px)
+		}
+		
+		.informative-4:hover{
+			box-shadow: 10px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(-10px, -10px)
+		}
+		
+		
+		.content-below {
+			margin-top: 100px;;
+			margin:2vw;
+			min-height: 100vh;
+			background: radial-gradient(circle at 50%,241, 207, 161);
+			border-radius: 10px;
+			box-shadow: -6px 4px 10px 5px;
+		}
+		
+		.title2{
+			font-family: 'Lucida Sans', sans-serif;
+			font-size: 40px;
+			margin-top: 40px;
+			padding-left: 40px;
+		}
+		
+		hr{
+			margin:auto;
+			max-width: 90vw;
+		}
+		
+		.text2{
+			font-size: 25px;
+			padding-left: 20px;
+			padding-right: 10px;
+		
+		}
+		
+		.entry-text1{
+			padding-top: 30px;
+			text-align: center;
+			display: inline-block;
+			max-width: 40vw;
+		}
+		
+		.divider{
+			display: inline-block;
+			border-right: 2px solid black;
+			min-height: 150px;
+			padding: 20px 20px;
+			min-width: 2px;
+			
+		}
+		.entry-text2{
+			border-left-color: 2px black ;
+			padding-top: 30px;
+			text-align: center;
+			display: inline-block;
+			max-width: 35vw;
+		}
+		
+		.right-place{
+			text-align: right;
+		}
+		
+		.chart-motorina{
+			
+			text-align: center;
+		}
+		.chart-motorina img{
+			padding-top: 20px;
+			max-width: 40vw;
+			height: auto;
+			padding-bottom: 40px;
+		}
+		
+		.title3{
+			padding-bottom: 10px;
+			padding-left: 40px;
+			font-family: 'Lucida Sans', sans-serif;
+			font-size: 40px;
+		}
+		
+		.last-part{
+			text-align: center;
+			font-size: 25px;
+			padding: 10px;
+		}
+		
+		.subtitle{
+			font-family: 'Oleo Script', cursive;
+			font-size: 30px;
+			padding-left: 10px;
+		}
+		.last-part p{
+			font-size: 25px;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.divider2{
+			display: inline-block;
+			border-right: 2px solid black;
+			min-height: 375px;
+			padding: 20px 20px;
+			min-width: 2px;
+			
+		}
+		.last-paragraph{
+			padding-left: 50px;
+			display: inline-block;
+			max-width: 40vw;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+}
+
+@media screen and (max-width:1299px) and (min-width:800px) {
+	.content-header {
+		font-family: 'Josefin Sans', sans-serif;
+		text-align: center;
+		background-image:
+				linear-gradient(
+					rgba(0, 0, 0, 1),
+					rgba(0, 0, 0, 0.5),
+					rgba(0, 0, 0, 1)
+				),
+				url(../imagini/imagine.jpg);
+		background-size: cover;
+		min-height: 90vh;
+		line-height: 90vh;
+		text-align: center;
+		}
+		
+		.intro{
+			font-size: 50px;
+			display: inline-block;
+			cursor: default;
+			user-select: none;
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-o-user-select: none;
+		}
+		
+		.button-next {
+			min-height: 10vh;
+			transition:1s;
+			line-height: 5vh;
+			text-align: center;
+		}
+		
+		#arrow{
+			position: relative;
+			transition:0.5s;
+			top: 3vh;
+			filter: invert(100%);
+			border: none;
+			outline: none;
+			cursor: pointer;
+			overflow: hidden;
+			outline: none;
+			font-size: 30px;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 25%;
+			border-bottom-right-radius: 25%;
+			min-width: 3vw;
+		
+		}
+		#text {
+			color: white;
+		}
+		#cursor {
+			display: inline-block;
+			width: 2px;
+			height: 50px;
+			background-color: white;
+			animation: blink .75s step-end infinite;
+			user-select: none;
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-o-user-select: none;
+		}
+		
+		.title{
+			font-size: 50px;
+			margin-top: 40px;	
+			font-family: 'Oleo Script', cursive;
+		}
+
+		.informative-1{
+			opacity: 0;
+			border-radius: 10px;
+
+			box-shadow: -6px 4px 10px 5px;
+			text-align: center;
+			margin-top: 100px;
+			margin: 30px 10px;
+			transition: 1s;
+		}
+		
+		.informative-2{
+			opacity: 0;
+			border-radius: 10px;
+
+			box-shadow: 10px 4px 10px 5px;
+			text-align: center;
+			margin: 30px 10px;
+
+			transition: 1s;
+		
+		}
+		
+		.informative-3{
+			border-radius: 10px;
+
+			box-shadow: -6px 4px 10px 5px;
+			text-align: center;
+			margin: 30px 10px;
+			opacity: 0;
+			transition: 1s;
+		}
+		.informative-4{
+			border-radius: 10px;
+
+			box-shadow: 10px 4px 10px 5px;
+			text-align: center;
+			margin: 30px 10px;
+			opacity: 0;
+
+			transition: 1s;
+		}
+		
+		.informative-1,.informative-2, .informative-3, .informative-4{
+			margin: 40px;
+		}
+		.informative-1 p{
+			padding: 40px;
+			margin-top: 20px;
+			font-size: 30px;
+			font-weight: 20px;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+		
+		.informative-2 p{
+			text-align: left;
+			font-size: 30px;
+			padding-top: 10px;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.informative-1 p{
+			padding: 40px;
+		}
+		.informative-3 li{
+			font-weight: 20px;
+			font-size: 30px;
+			text-align: left;
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-left: 3vw;
+			list-style: none;
+		}
+		.informative-4 li{
+			
+			list-style: none;
+			text-align: center;
+			font-size: 30px;
+			padding-top: 40px;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.informative-1:hover{
+			box-shadow: -6px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.informative-2:hover{
+			box-shadow: 10px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.informative-3:hover{
+			box-shadow: -6px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.informative-4:hover{
+			box-shadow: 10px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.content-below {
+			text-align: center;
+			margin:2vw;
+			background: radial-gradient(circle at 50%,241, 207, 161);
+			border-radius: 10px;
+			transition: 1s;
+			box-shadow: -6px 4px 10px 5px;
+		}
+		
+		.content-below:hover{
+			transform: translate(0, -10px);
+		}
+		.title2{
+			text-align: left;
+			font-family: 'Lucida Sans', sans-serif;
+			font-size: 40px;
+			margin-top: 40px;
+			padding-left: 40px;
+		}
+		
+		hr{
+			margin:auto;
+			max-width: 90vw;
+		}
+		
+		.text2{
+			text-align: center;
+			font-size: 30px;
+		
+		}
+		
+		.entry-text1{
+			padding-top: 30px;
+			text-align: center;
+			padding: 50px;
+		}
+		
+
+		.entry-text2{
+			border-left-color: 2px black ;
+			padding-top: 30px;
+			text-align: center;
+			padding: 50px;
+		}
+		
+		.right-place{
+			text-align: right;
+		}
+		
+		.chart-motorina{
+			
+			text-align: center;
+		}
+		.chart-motorina img{
+			padding-top: 20px;
+			max-width: 70vw;
+			height: auto;
+			padding-bottom: 40px;
+		}
+		
+		.title3{
+			padding-bottom: 10px;
+			padding-left: 40px;
+			font-family: 'Lucida Sans', sans-serif;
+			font-size: 40px;
+		}
+		
+		.last-part{
+			text-align: center;
+			font-size: 25px;
+			padding: 10px;
+		}
+		
+		.subtitle{
+			font-family: 'Oleo Script', cursive;
+			font-size: 30px;
+			padding-left: 10px;
+		}
+		.last-part p{
+			font-size: 25px;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.last-paragraph{
+			padding: 25px;
+			text-align: center;
+		}
+}
+
+@media screen and (max-width:799px) {
+	.content-header {
+		font-family: 'Josefin Sans', sans-serif;
+		text-align: center;
+		background-image:
+				linear-gradient(
+					rgba(0, 0, 0, 1),
+					rgba(0, 0, 0, 0.5),
+					rgba(0, 0, 0, 1)
+				),
+				url(../imagini/imagine.jpg);
+		background-size: cover;
+		min-height: 90vh;
+		line-height: 90vh;
+		text-align: center;
+		}
+		
+		.intro{
+			font-size: 50px;
+			display: inline-block;
+			cursor: default;
+			user-select: none;
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-o-user-select: none;
+		}
+		
+		.button-next {
+			min-height: 10vh;
+			transition:1s;
+			line-height: 5vh;
+			text-align: center;
+		}
+		
+		#arrow{
+			position: relative;
+			transition:0.5s;
+			top: 3vh;
+			filter: invert(100%);
+			border: none;
+			outline: none;
+			cursor: pointer;
+			overflow: hidden;
+			outline: none;
+			font-size: 30px;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 25%;
+			border-bottom-right-radius: 25%;
+			min-width: 3vw;
+		
+		}
+		#text {
+			color: white;
+		}
+		#cursor {
+			display: inline-block;
+			width: 2px;
+			height: 50px;
+			background-color: white;
+			animation: blink .75s step-end infinite;
+			user-select: none;
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				-o-user-select: none;
+		}
+		
+		.title{
+			font-size: 50px;
+			font-family: 'Oleo Script', cursive;
+		}
+
+		.informative-1{
+			opacity: 0;
+			border-radius: 10px;
+			margin:0;
+			box-shadow: -6px 4px 10px 5px;
+			text-align: center;
+			transition: 1s;
+		}
+		
+		.informative-2{
+			opacity: 0;
+			border-radius: 10px;
+
+			box-shadow: 10px 4px 10px 5px;
+			text-align: center;
+
+			transition: 1s;
+		
+		}
+		
+		.informative-3{
+			border-radius: 10px;
+
+			box-shadow: -6px 4px 10px 5px;
+			text-align: center;
+			opacity: 0;
+			transition: 1s;
+		}
+		.informative-4{
+			border-radius: 10px;
+
+			box-shadow: 10px 4px 10px 5px;
+			text-align: center;
+			opacity: 0;
+
+			transition: 1s;
+		}
+		
+		.informative-1,.informative-2, .informative-3, .informative-4{
+			margin: 40px;
+		}
+		.informative-1 p{
+			padding: 40px;
+			margin-top: 20px;
+			font-size: 30px;
+			font-weight: 20px;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+		
+		.informative-2 p{
+			text-align: left;
+			font-size: 30px;
+			padding-top: 10px;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.informative-1 p{
+			padding: 40px;
+		}
+		.informative-3 li{
+			font-weight: 20px;
+			font-size: 30px;
+			text-align: left;
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-left: 3vw;
+			list-style: none;
+		}
+		.informative-4 li{
+			
+			list-style: none;
+			text-align: center;
+			font-size: 30px;
+			padding-top: 40px;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.informative-1:hover{
+			box-shadow: -6px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.informative-2:hover{
+			box-shadow: 10px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.informative-3:hover{
+			box-shadow: -6px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.informative-4:hover{
+			box-shadow: 10px 4px 10px 5px grey;
+			transform:scale3d(1.1, 1.1, 1);
+			transform: translate(0, -10px);
+		}
+		
+		.content-below {
+			text-align: center;
+			margin:2vw;
+			background: radial-gradient(circle at 50%,241, 207, 161);
+			border-radius: 10px;
+			transition: 1s;
+			box-shadow: -6px 4px 10px 5px;
+		}
+		
+		.content-below:hover{
+			transform: translate(0, -10px);
+		}
+		.title2{
+			text-align: left;
+			font-family: 'Lucida Sans', sans-serif;
+			font-size: 40px;
+			margin-top: 40px;
+			padding-left: 40px;
+		}
+		
+		hr{
+			margin:auto;
+			max-width: 90vw;
+		}
+		
+		.text2{
+			text-align: center;
+			font-size: 30px;
+		
+		}
+		
+		.entry-text1{
+			text-align: center;
+			padding: 10px;
+			padding-top: 30px;
+		}
+		
+
+		.entry-text2{
+			border-left-color: 2px black ;
+			text-align: center;
+			padding: 10px;
+			padding-top: 30px;
+		}
+		
+		.right-place{
+			text-align: right;
+		}
+		
+		.chart-motorina{
+			
+			text-align: center;
+		}
+		.chart-motorina img{
+			padding-top: 20px;
+			max-width: 100vw;
+			height: auto;
+			padding-bottom: 40px;
+		}
+		
+		.title3{
+			padding-bottom: 10px;
+			padding-left: 40px;
+			font-family: 'Lucida Sans', sans-serif;
+			font-size: 40px;
+		}
+		
+		.last-part{
+			text-align: center;
+			font-size: 25px;
+			padding: 10px;
+		}
+		
+		.subtitle{
+			font-family: 'Oleo Script', cursive;
+			font-size: 30px;
+			text-decoration: underline;
+		}
+		.last-part p{
+			font-size: 25px;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.last-paragraph{
+			padding: 10px;
+			text-align: center;
+		}
+}
+@keyframes blink {
+	from, to{
+		background-color:white;
+	}
+
+	50% {
+		background-color: transparent;
+	}
+}
+
+
